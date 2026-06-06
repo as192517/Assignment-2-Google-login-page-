@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+.Main-Container{
+width: 100vw;
+height: 100vh;
+background-color: rgb(217, 238, 238);
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.Main-Box{
+    height: 700px;
+    width: 1000px;
+    background-color: rgb(250, 253, 253);
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.Box1{
+    height: 600px;
+    width: 450px;
+    background-color:white;
+}
+.Box2{
+    height: 600px;
+    width: 450px;
+    background-color: white;
+  
+}
+.image{
+    margin-top: 60px;
+    left:30px ;
+    /* image size-adjust: height 20px: */
+}
+.placeholder{
+    margin-top: 80px;
+    margin-left:0px;
+    width: 350px;
+    height: 20px;
+    padding: 20px;
+    border-color:black 
+}
+
+.Forget-Email>p{
+     margin-top: 90px;
+     margin-left:40px;
+     color: blue;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer; 
+}
+.Detail>p{
+    margin-top: 60px;
+     margin-left:40px; 
+}
+.Guestmode>p{
+     margin-top: -10px;
+     margin-left:40px;
+     color: blue;
+     font-size: 14px;
+}
+.Double-button{
+     display: flex;
+     justify-content:space-between ;
+     align-items: center;
+     margin-top: 30px;
+     width: 200px;
+     flex-direction: row;
+     margin-left: 200px;
+     
+}
+.Create-account>button{
+   color: blue;
+   border: none;
+   text-align: center;
+   font-weight: bold;
+}
+.Next>button{
+    color: white;
+    background-color: blue; width: 80px; height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+}
+.Language-Bar{
+    margin-left: -800px;
+}
+.Ask{
+    margin-left: 750px;
+    margin-top: -20px;
+}
