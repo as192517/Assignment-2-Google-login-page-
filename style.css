@@ -13,6 +13,7 @@ body{
     background-color: #dce4e9;
     flex-direction: column;
     width: 100%;
+ 
 }
 
 .Main-container{
@@ -22,6 +23,7 @@ body{
     border-radius: 30px;
     display: flex;
     flex-direction: row;
+
 }
 .box-1{
     height: 50vh;
@@ -32,6 +34,7 @@ body{
     box-sizing: border-box;
     padding: 30px;
     gap: 40px;
+    
 }
 
 .image{
@@ -146,12 +149,12 @@ color: blue;
 
 /* tablet */
 
-@media screen and (max-width:869px ){
+@media screen and (max-width:868px ){
 
 
     .Main-container{
         flex-direction: column;
-       
+        
         width: 80%;
     }
 
@@ -165,16 +168,26 @@ color: blue;
         width: 40%;
     }
 
+    /* .box-1{
+        height: 10vh;
+    } */
+
     .placeholder>input{
-        width: 390px;
+        width: 250px;
     }
+  
 
     .msg>p{
         padding-right: 0px;
     }
 
-    .box-2{
+    /* .box-2{
         padding-left: 70px;
+        height: auto;
+    } */
+
+    .Main-container{
+        height: 85vh;
     }
 
 }
@@ -184,13 +197,13 @@ color: blue;
 
 @media screen and (max-width: 773px){
     .placeholder>input{
-        width: 290px;
+        width: 200px;
     }
 }
 
 
-@media screen and (max-width: 379px){
+@media screen and (max-width: 447px){
     .placeholder>input{
-        width: 190px;
+        width: 100px;
     }
 }
