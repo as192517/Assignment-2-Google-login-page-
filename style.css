@@ -1,88 +1,117 @@
-
 body{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
-.Main-Container{
-width: 100vw;
-height: 100vh;
-background-color: rgb(220, 240, 240);
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-} 
-.Main-Box{
-    height: 700px;
-    width: 1000px;
-    background-color: rgb(242, 247, 247);
-    border-radius: 30px;
+
+
+
+.body-container{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #dce4e9;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Main-container{
+    height: 50vh;
+    width: 80%;
+    background-color:rgb(248, 244, 244);
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-   
 }
-.Box1{
-    height: 600px;
-    width: 450px;
-    background-color:white;
-}
-.Box2{
-    height: 600px;
-    width: 450px;
-    background-color: white;
-  
-}
-.image{
-    margin-top: 60px;
-    left:30px ;
-    /* image size-adjust: height 20px: */
-}
-.placeholder{
-    margin-top: 80px;
-    margin-left:0px;
-    width: 350px;
-    height: 20px;
-    padding: 20px;
-    border-color:black 
+.box-1{
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: start;  
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 40px;
 }
 
-.Forget-Email>p{
-     margin-top: 90px;
-     margin-left:40px;
-     color: blue;
-     font-size: 14px;
-     font-weight: bold;
-     cursor: pointer; 
+.image{
+    display: flex; 
+    justify-content: center;
+
 }
-.Detail>p{
-    margin-top: 60px;
-     margin-left:40px; 
+.image>img{
+    height: 80px;
+    width:  70px;
 }
-.Guestmode>p{
-     margin-top: -10px;
-     margin-left:40px;
-     color: blue;
-     font-size: 14px;
+.Sing-In{ 
+    display: flex;
+    flex-direction: column;
 }
-.Double-button{
-     display: flex;
-     justify-content:space-between ;
-     align-items: center;
-     margin-top: 30px;
-     width: 200px;
-     flex-direction: row;
-     margin-left: 200px;
-     
+.Sing-In>p{
+    font-size: 25px;
 }
-.Create-account>button{
-   color: blue;
-   border: none;
-   text-align: center;
-   font-weight: bold;
+.Sing-In>h1{
+    font-size: 40px;
 }
-.Next>button{
+.box-2{
+    height: 50vh;
+    width: 50%; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placeholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.placeholder>input{
+    border-color: black;
+    width: 290px;
+    height: 50px;
+    outline: none;
+}
+
+.msg>p{
+padding-right: 190px;
+cursor: pointer;
+color: blue;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 45px;
+}
+.text>p1{
+    font-size: 15px;
+}
+.text>p2{
+    cursor: pointer;
+    color: blue;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 90px;
+}
+.b1>button{
+    color: blue;
+    background-color: rgb(242, 242, 247); height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+}
+
+.b2>button{
     color: white;
     background-color: blue; width: 80px; height: 40px;
     text-align: center;
@@ -90,33 +119,78 @@ justify-content: center;
     border: none;
 }
 .Language-Bar{
-   margin-left: -800px;
-  
-   
+
+    height: auto;
+    width: 50%;
+
 }
 .Ask{
-    margin-left: 750px;
-    margin-top: -20px;
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
 }
-@media screen and (max-width:1124px){
-.Main-Box {
-    min-height: 100vh;
-    width: 100vw;
-    border-radius: 0px;
+
+.links{
+    height: auto;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;}
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
-@media screen and (max-width:915px){
-    .Ask{flex-direction: row;
-    display: flex;}
+
+/* responsive */
+
+/* tablet */
+
+@media screen and (max-width:869px ){
+
+
+    .Main-container{
+        flex-direction: column;
+       
+        width: 80%;
     }
 
-@media screen and (max-width: 1020px) and (min-width: 320px) {
-    .Language-Bar {
+    .links{
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-left: 0px;}
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 80px;
+        width: 40%;
     }
 
+    .placeholder>input{
+        width: 390px;
+    }
+
+    .msg>p{
+        padding-right: 0px;
+    }
+
+    .box-2{
+        padding-left: 70px;
+    }
+
+}
+
+
+/* mobiles */
+
+@media screen and (max-width: 773px){
+    .placeholder>input{
+        width: 290px;
+    }
+}
+
+
+@media screen and (max-width: 379px){
+    .placeholder>input{
+        width: 190px;
+    }
+}
